@@ -9,6 +9,7 @@ In doing so we will work in a recursive framework, see some more examples of pol
 Our goal is to represent logical expressions such as: ~((T & (x | y))^x)
 
 Where T is a value of "True", the ~,|,&,^, symbols denotes the "not","or","and" and "xor" operators respectively, and x and y are variables.
+
 ![resize2_tree](https://user-images.githubusercontent.com/92651125/155814934-29d234ba-ec83-4e84-995f-2b4fe20c42e5.svg)
 
 Class Hierarchy:
