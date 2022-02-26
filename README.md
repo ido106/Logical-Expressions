@@ -4,11 +4,10 @@ OOP course assignment in Java
 
 implementation of a system that can represent nested logical expressions that include variables, evaluate their truth values for specific variable assignments, convert them, and simplify the results by removing "redundant" parts.
 
-In doing so we will work in a recursive framework, see some more examples of polymorphism, and practice the use of inheritance and class hierarchies for sharing common code.
+*In doing so we will work in a recursive framework, see some more examples of polymorphism, and practice the use of inheritance and class hierarchies for sharing common code.*  
 
-Our goal is to represent logical expressions such as: ~((T & (x | y))^x)
-
-Where T is a value of "True", the ~,|,&,^, symbols denotes the "not","or","and" and "xor" operators respectively, and x and y are variables.
+Our goal is to represent logical expressions such as: ~((T & (x | y))^x)  
+Where T is a value of "True", the ~,|,&,^, symbols denotes the "not","or","and" and "xor" operators respectively, and x and y are variables.  
 <p align="center">
   <img 
     src="https://user-images.githubusercontent.com/92651125/155814934-29d234ba-ec83-4e84-995f-2b4fe20c42e5.svg"
