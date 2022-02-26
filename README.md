@@ -50,11 +50,9 @@ Should print: The result is: true
 ```
 Expression e = new Xor(new And(new Var("x"), new Val(false)), new Or(new Var("y"), new Val(false)));
 System.out.println(e);
-
 Should print: ((x & F) ^ (y | F))
 
 System.out.println(e.simplify());
-
 Should print: (x ^ y)
 ```
 
