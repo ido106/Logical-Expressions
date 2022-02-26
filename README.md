@@ -1,6 +1,6 @@
 # Logical Expressions
 
-OOP course assignment in java
+OOP course assignment in Java
 
 implementation of a system that can represent nested logical expressions that include variables, evaluate their values for specific variable assignments, convert them, and simplify the results by removing "redundant" parts.
 
