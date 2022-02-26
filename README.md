@@ -23,8 +23,8 @@ Class Hierarchy:
   >
 </p>
 
-Example:  
-Making an expression
+### Example  
+##### Creating an expression
 ```
 Expression e2 = new Xor(new And(new Var("x"), new Var("y")), new Val(true));
 
@@ -34,7 +34,7 @@ System.out.println(s);
 Should print ((x & y) ^ T)
 ```
 
-Evaluate its value for a given variable assignment to values:
+##### Evaluate its truth value for a given variable assignment to values
 ```
 Map<String, Boolean> assignment = new TreeMap<>();
 assignment.put("x", true);
@@ -44,4 +44,27 @@ Boolean value = e2.evaluate(assignment);
 System.out.println("The result is: " + value);
 
 Should print: The result is: true
+```
+
+##### Simplification
+```
+Expression e = new Xor(new And(new Var("x"), new Val(false)), new Or(new Var("y"), new Val(false)));
+System.out.println(e);
+
+Should print: ((x & F) ^ (y | F))
+
+System.out.println(e.simplify());
+
+Should print: (x ^ y)
+```
+
+##### Nandify and Norify
+```
+Expression e = new Xor(new Var("x"), new Var("y"));
+System.out.println(e.nandify());
+System.out.println(e.norify());
+
+Should print:
+((x ↑ (x ↑ y)) ↑ (y ↑ (x ↑ y)))
+(((x ↓ x) ↓ (y ↓ y)) ↓ (x ↓ y))
 ```
