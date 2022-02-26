@@ -22,7 +22,7 @@ Class Hierarchy:
   >
 </p>
 
-### Example  
+### Examples  
 ##### Creating an expression
 ```
 Expression e2 = new Xor(new And(new Var("x"), new Var("y")), new Val(true));
